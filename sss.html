@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header and Footer Layout with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .content {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            padding: 20px;
+        }
+        .header, .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            z-index: 1030;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            z-index: 1030;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Fixed Header</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content container">
+        <div class="row">
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis magna sit amet erat hendrerit, eget suscipit dolor ultrices. Suspendisse vehicula orci sit amet nunc egestas fermentum. Curabitur nec urna ut leo scelerisque convallis.</p>
+                <p>Vivamus interdum ligula nec sapien suscipit, ac vulputate augue tempor. Pellentesque varius consequat dui. Nam id neque id risus tincidunt convallis.</p>
+                <p>Morbi sit amet efficitur justo. Ut sollicitudin sapien eget est posuere, ut mollis sem viverra. Donec blandit tortor a sapien rhoncus, vel fringilla arcu aliquet.</p>
+                <p>Nullam eget velit id odio tempor posuere. Nulla euismod, ex a eleifend interdum, quam tortor volutpat odio, sed malesuada urna felis a ligula.</p>
+                <p>Etiam in mi vitae lacus tempus vulputate. Aliquam sit amet consectetur justo. Maecenas euismod dui ut tortor dapibus, non porta ex venenatis.</p>
+                <p>Ut hendrerit velit id sapien suscipit, at tristique dui fermentum. Mauris volutpat est ut est dapibus, quis rutrum mi tincidunt. Donec vitae justo est.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum in arcu posuere, posuere tortor vel, hendrerit odio.</p>
+                <p>Aenean viverra augue nisi, vel ullamcorper tortor convallis at. Cras sit amet venenatis risus. Suspendisse potenti. Curabitur malesuada fringilla odio, nec fermentum orci.</p>
+                <p>Praesent vehicula diam vitae nibh dapibus, sed suscipit ligula aliquam. Sed malesuada volutpat ligula. Cras sollicitudin nisi nec odio ullamcorper, nec dignissim lectus aliquet.</p>
+                <p>Curabitur ac lectus ac erat laoreet tempor a a nisi. Cras vel arcu et mauris fermentum volutpat id vel libero. Nullam dictum libero ut odio tincidunt gravida.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Fixed Footer</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
